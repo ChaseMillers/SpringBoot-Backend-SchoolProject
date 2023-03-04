@@ -14,43 +14,39 @@ public class Product {
     private double price;
     private int quantity;
     private String description;
+    private String url;
 
+    // Getters
+    public String getUrl() { return url; }
     public Long getId() {
         return id;
     }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public double getPrice() {
         return price;
     }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public int getQuantity() {
         return quantity;
     }
+    public String getDescription() { return description; }
 
+
+    // Setters
+    public void setUrl(String url) { this.url = url; }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
-    public String getDescription() {
-        return description;
-    }
-
     public void setDescription(String description) {
         this.description = description;
     }
